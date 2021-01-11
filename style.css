@@ -1,0 +1,66 @@
+:root{
+	--mainGray: #424649;
+	--mainBlack: #222;
+	--mainOlive: #b4b434;
+	--subGray: #5c6063;
+}
+@font-face {
+  font-family: 'tsubasa';
+  src: url("JiyunoTsubasa.ttf");
+}
+
+body{
+	background-color:var(--mainGray);
+	font-family: "tsubasa";
+}
+
+section{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.gameBox{
+	width:550px;
+	height:100vh;
+	background-color: var(--subGray);
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	border-radius: 20px 0 20px 0;
+}
+.gameDisplay{
+	width:450px;
+	height:800px;
+	margin:auto;
+}
+.captionBox{
+	width:800px;
+	height:100vh;
+	background-color: var(--subGray);
+	padding: 20px 30px;
+	border-radius: 20px 0 20px 0;
+}
+
+.titleText{
+	font-size: 70px;
+	color:var(--mainOlive);
+}
+.tagText{
+	font-size: 30px;
+	color:var(--mainBlack);
+}
+.captionText{
+	font-size: 25px;
+	line-height: 40px;
+	color:var(--mainBlack);
+}
+.cubesImg{
+	width:100%;
+}
+
+.lineSpace{
+	height: 20px;
+}
+
+
