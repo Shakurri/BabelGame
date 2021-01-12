@@ -10,11 +10,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Unity185010.json", {onProgress: UnityProgress});
+    </script>
 </head>
 <body>
 	<section>
 		<div class="gameBox">
-			<img src="images/back.png" class="gameDisplay">
+			<!-- <img src="images/back.png" class="gameDisplay"> -->
+			<div class="webgl-content">
+		      <div id="unityContainer" class="gameDisplay"></div>
+		      
+		    </div>
 		</div>
 		<div class="captionBox">
 			<p class="titleText">-Babel-</p>
