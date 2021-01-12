@@ -51,8 +51,8 @@ section{
 	color:var(--mainBlack);
 }
 .captionText{
-	font-size: 2.5vh;
-	line-height: 140%;
+	font-size: 25px;
+	line-height: 40px;
 	color:var(--mainBlack);
 }
 .cubesImg{
